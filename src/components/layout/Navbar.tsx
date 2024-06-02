@@ -8,7 +8,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { Section } from '@/app/page'
+import { Section } from '../page/HomePage'
 
 
 type Props = {

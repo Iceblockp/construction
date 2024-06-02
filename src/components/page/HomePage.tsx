@@ -56,7 +56,7 @@ const HomePage = (props: Props) => {
             })
         }
 
-    }, []);
+    }, [sections]);
 
 
     const scrollToSection = (sectionRef: React.RefObject<HTMLDivElement>) => {
