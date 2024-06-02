@@ -14,7 +14,7 @@ const Ads = (props: Props) => {
                             <div className=' font-logo font-normal text-[17.56px] text-white '>Just one call away: <span className=' underline'>+84 1102 2703</span></div>
                         </div>
                     </div>
-                    <div className=' w-[30%] '>
+                    <div className=' w-full flex justify-center sm:w-[30%] '>
                         <div>
                             <button className=' px-[14.63px] py-[11.71px] text-white border font-semibold text-[13.17px] border-white rounded-l  '>Get your consultation</button>
                         </div>

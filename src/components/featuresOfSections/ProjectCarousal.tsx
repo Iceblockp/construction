@@ -16,11 +16,11 @@ const ProjectCarousal = (props: Props) => {
                 <CarouselContent className=''>
                     {Array.from({ length: 5 }).map((_, index) => (
                         <CarouselItem key={index}>
-                            <div className="p-1 w-full h-full grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                <div className=' bg-gray-500 w-full h-[242px]'></div>
-                                <div className=' bg-gray-500 w-full h-[242px]'></div>
-                                <div className=' bg-gray-500 w-full h-[242px]'></div>
-                                <div className=' bg-gray-500 w-full h-[242px]'></div>
+                            <div className="p-1 w-full h-full grid grid-cols-2 sm:grid-cols-2 gap-4">
+                                <div className=' bg-gray-500 w-full h-[121px] sm:h-[242px]'></div>
+                                <div className=' bg-gray-500 w-full h-[121px] sm:h-[242px]'></div>
+                                <div className=' bg-gray-500 w-full h-[121px] sm:h-[242px]'></div>
+                                <div className=' bg-gray-500 w-full h-[121px] sm:h-[242px]'></div>
 
 
                             </div>
