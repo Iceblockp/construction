@@ -31,7 +31,7 @@ const ContentUs = (props: Props) => {
                 <div className=' max-w-[434px] mx-auto '>
                     <div>
                         <div className=' font-bold font-logo text-[26.34px] text-neutral-800 '>What can us do for you?</div>
-                        <div className=' mb-[25px] mt-[10px] font-normal font-logo text-neutral-800 text-[14.63px] '>We are ready to work on a project of any complexity, whether it's commercial or residential.</div>
+                        <div className=' mb-[25px] mt-[10px] font-normal font-logo text-neutral-800 text-[14.63px] '>We are ready to work on a project of any complexity, whether it&apos;s commercial or residential.</div>
                         <div>
                             <Form {...form}>
                                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 ">

@@ -14,9 +14,9 @@ const AboutUs = (props: Props) => {
                         <div className=' w-full h-full px-[40px] py-[50px] '>
                             <div className=' font-bold text-[36px] font-logo text-white '>About us</div>
                             <div className=' text-[20px] text-white  '>
-                                <p>For more than 30 years we have been delivering world-class construction and we've built many lasting relationships along the way.</p>
+                                <p>For more than 30 years we have been delivering world-class construction and we&apos;ve built many lasting relationships along the way.</p>
                                 <br />
-                                <p>For more than 30 years we have been delivering world-class construction and we've built many lasting relationships along the way.</p>
+                                <p>For more than 30 years we have been delivering world-class construction and we&apos;ve built many lasting relationships along the way.</p>
                             </div>
                             <div>
                                 <button className=' rounded-xl mt-[40px] bg-white px-[20px] py-[16px] text-[#2947A9] '>More on Our History</button>
