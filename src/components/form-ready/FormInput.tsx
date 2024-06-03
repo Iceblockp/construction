@@ -9,15 +9,15 @@ import {
     FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
-import { FieldValues, UseFormReturn } from 'react-hook-form';
+import { FieldValues, Path, UseFormReturn } from 'react-hook-form';
 
-type FormInputProps = {
-    form: UseFormReturn<FieldValues, any, undefined>;
-    name: string;
+interface FormInputProps<T extends FieldValues> {
+    form: UseFormReturn<T>;
+    name: Path<T>;
     placeholder: string;
     className: any
 };
-const FormInput = (props: FormInputProps) => {
+const FormInput = <T extends FieldValues>(props: FormInputProps<T>) => {
     const { form, name, placeholder, className } = props;
     return (
         <FormField

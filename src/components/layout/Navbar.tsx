@@ -30,12 +30,12 @@ const Navbar = (props: Props) => {
                             <div >
 
                                 <svg width="29" height="36" viewBox="0 0 29 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M28.4258 20.1434V27.2244L15.2519 34.8315V27.7496L28.4258 20.1434Z" fill="#2947A9" stroke="black" stroke-width="0.731732" />
-                                    <path d="M15.2519 1.34153L27.2405 8.26539L21.1107 11.8063L15.2519 8.42324V1.34153Z" fill="#0B267D" stroke="black" stroke-width="0.731732" />
-                                    <path d="M14.52 25.0112L9.84756 22.3137V15.2297L14.52 17.9302V25.0112Z" fill="#91A1D4" stroke="black" stroke-width="0.731732" />
-                                    <path d="M15.2519 25.0111V17.9303L28.4258 10.32V17.404L15.2519 25.0111Z" fill="#2947A9" stroke="black" stroke-width="0.731732" />
-                                    <path d="M14.5199 8.42319L8.6272 11.8243L2.5342 8.26266L14.5199 1.34149V8.42319Z" fill="#2947A9" stroke="black" stroke-width="0.731732" />
-                                    <path d="M7.47551 23.4722V23.6834L7.65848 23.7891L14.5199 27.7494V34.8313L1.34365 27.2242V10.3162L7.47551 13.856V23.4722Z" fill="#91A1D4" stroke="black" stroke-width="0.731732" />
+                                    <path d="M28.4258 20.1434V27.2244L15.2519 34.8315V27.7496L28.4258 20.1434Z" fill="#2947A9" stroke="black" strokeWidth="0.731732" />
+                                    <path d="M15.2519 1.34153L27.2405 8.26539L21.1107 11.8063L15.2519 8.42324V1.34153Z" fill="#0B267D" stroke="black" strokeWidth="0.731732" />
+                                    <path d="M14.52 25.0112L9.84756 22.3137V15.2297L14.52 17.9302V25.0112Z" fill="#91A1D4" stroke="black" strokeWidth="0.731732" />
+                                    <path d="M15.2519 25.0111V17.9303L28.4258 10.32V17.404L15.2519 25.0111Z" fill="#2947A9" stroke="black" strokeWidth="0.731732" />
+                                    <path d="M14.5199 8.42319L8.6272 11.8243L2.5342 8.26266L14.5199 1.34149V8.42319Z" fill="#2947A9" stroke="black" strokeWidth="0.731732" />
+                                    <path d="M7.47551 23.4722V23.6834L7.65848 23.7891L14.5199 27.7494V34.8313L1.34365 27.2242V10.3162L7.47551 13.856V23.4722Z" fill="#91A1D4" stroke="black" strokeWidth="0.731732" />
                                 </svg>
 
 

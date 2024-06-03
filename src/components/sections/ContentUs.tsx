@@ -1,7 +1,7 @@
 "use client"
-import React from 'react'
+import React, { useRef } from 'react'
 import Container from '../layout/Container'
-import { useForm } from "react-hook-form"
+import { FieldValue, useForm } from "react-hook-form"
 import {
     Form,
     FormControl,
@@ -14,15 +14,63 @@ import {
 import { Input } from "@/components/ui/input"
 import FormInput from '../form-ready/FormInput'
 import { Textarea } from '../ui/textarea'
+import emailjs from '@emailjs/browser';
 
 
-type Props = {}
+type Props = {};
+type FormParameter = {
+    from_name: string,
+    email: string,
+    phone: string,
+    reason: string,
+    message: string
+}
+type FormData = {
+    username: string,
+    email: string,
+    phone: string,
+    reason: string,
+    area: string
+}
 
 const ContentUs = (props: Props) => {
-    const form = useForm();
+    const form = useForm({
+        defaultValues: {
+            username: '',
+            email: '',
+            phone: '',
+            reason: '',
+            area: '',
+        }
+    });
+
+    const serviceId = 'service_fgixvrq';
+    const templateId = 'template_oi5k3y5';
+    const publicKey = 'SrPyRTuY5_30CUmSE';
 
     const onSubmit = (data: any) => {
-        console.log(data)
+
+        const formParameter: FormParameter = {
+            from_name: data.username,
+            email: data.email,
+            phone: data.phone,
+            reason: data.reason,
+            message: data.area
+
+        }
+
+
+        emailjs.send(serviceId, templateId, formParameter, publicKey)
+            .then(
+                (response) => {
+                    console.log('SUCCESS!');
+                }
+            ).catch((error) => {
+                console.log("error")
+            });
+
+        form.reset();
+
 
     }
     return (
