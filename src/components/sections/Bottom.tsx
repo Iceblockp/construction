@@ -40,16 +40,7 @@ const Bottom = (props: Props) => {
                 <div className='  '>
                     <div className=' flex flex-col gap-[10px] '>
                         <div className=' font-medium text-[14.63px] font-logo text-[#2947A9] '>NEWSLETTER:</div>
-                        <div className=' flex gap-3 mb-[10px] '>
-                            <div>
 
-                                <Input className=' w-full h-full' placeholder='Your email here' type="text" />
-                            </div>
-                            <div>
-
-                                <button className=' font-semibold text-[13.17px] text-white px-[14.63px] py-[11.71px] bg-[#F9995D] rounded-l '>Subscribe</button>
-                            </div>
-                        </div>
                         <div className=' font-medium text-[14.63px] text-[#2947A9] font-logo '>SOCIAL:</div>
                         <div className=' flex gap-3 '>
                             <div className=" size-[29.27px] bg-neutral-700 rounded-full flex justify-center items-end  ">

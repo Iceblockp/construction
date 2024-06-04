@@ -5,7 +5,7 @@ type Props = {}
 
 const Ads = (props: Props) => {
     return (
-        <div className=' py-[50px] bg-black '>
+        <div className=' py-[50px] bg-[url("/img/ads.png")] '>
             <Container>
                 <div className='flex items-center flex-col gap-[30px] sm:flex-row  '>
                     <div className=' w-[70%] '>

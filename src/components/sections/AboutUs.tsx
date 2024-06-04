@@ -7,7 +7,9 @@ const AboutUs = (props: Props) => {
     return (
         <Container>
             <div className='  w-full relative mb-[150px] '>
-                <div className=' w-full lg:w-[70%] h-[669px] bg-gray-500 '></div>
+                <div className=' w-full lg:w-[70%] h-[669px] bg-[url("/img/man.png")] bg-cover bg-center '>
+
+                </div>
 
                 <div className=' h-full flex items-center mt-[-100px] lg:mt-0 relative lg:absolute right-0 top-0 '>
                     <div className=" bg-[#2947A9] w-full sm:w-[488px] mx-auto  ">

@@ -60,8 +60,13 @@ const HomePage = (props: Props) => {
 
 
     const scrollToSection = (sectionRef: React.RefObject<HTMLDivElement>) => {
+
         if (sectionRef.current) {
-            sectionRef.current.scrollIntoView({ behavior: 'smooth' })
+            const offsetTop = sectionRef.current.offsetTop - 80;
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            })
         }
     }
 

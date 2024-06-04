@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from '../layout/Container'
-import { ServiceOne } from '../icons'
+import { ServiceFive, ServiceFour, ServiceOne, ServiceSix, ServiceThree, ServiceTwo } from '../icons'
 
 type Props = {}
 
@@ -19,31 +19,31 @@ const Services = (props: Props) => {
 
                     <div className=' w-full md:w-[198.3px] mx-auto bg-[#2947A9] h-[132.44px] border border-gray-400 flex flex-col items-center '>
                         <div className=' size-[44px] my-[20px] border-b-2 border-white flex justify-center items-center '>
-                            <ServiceOne />
+                            <ServiceTwo />
                         </div>
                         <div className=' font-semibold text-[14.63px] text-white '>Renovation</div>
                     </div>
                     <div className=' w-full md:w-[198.3px] mx-auto bg-white h-[132.44px] border border-gray-400 flex flex-col items-center'>
                         <div className=' size-[44px] my-[20px] border-b-2 border-neutral-100 flex justify-center items-center '>
-                            <ServiceOne />
+                            <ServiceThree />
                         </div>
                         <div className=' font-semibold text-[14.63px] text-[#2947A9] '>Construction</div>
                     </div>
                     <div className=' w-full md:w-[198.3px] mx-auto bg-[#2947A9] h-[132.44px] border border-gray-400 flex flex-col items-center'>
                         <div className=' size-[44px] my-[20px] border-b-2 border-white flex justify-center items-center '>
-                            <ServiceOne />
+                            <ServiceFour />
                         </div>
                         <div className=' font-semibold text-[14.63px] text-white '>Repair Services</div>
                     </div>
                     <div className=' w-full md:w-[198.3px] mx-auto bg-white h-[132.44px] border border-gray-400 flex flex-col items-center'>
                         <div className=' size-[44px] my-[20px] border-b-2 border-neutral-100 flex justify-center items-center '>
-                            <ServiceOne />
+                            <ServiceFive />
                         </div>
                         <div className=' font-semibold text-[14.63px] text-[#2947A9] '>Architecture</div>
                     </div>
                     <div className=' w-full md:w-[198.3px] mx-auto bg-[#2947A9] h-[132.44px] border border-gray-400 flex flex-col items-center'>
                         <div className=' size-[44px] my-[20px] border-b-2 border-white flex justify-center items-center '>
-                            <ServiceOne />
+                            <ServiceSix />
                         </div>
                         <div className=' font-semibold text-[14.63px] text-white '>Electric</div>
                     </div>
