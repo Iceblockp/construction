@@ -30,7 +30,7 @@ const HomePage = (props: Props) => {
         const options = {
             root: null,
             rootMargin: '0px',
-            threshold: 0.6
+            threshold: Array.from(Array(101).keys(), t => t / 100)
         };
 
         const observer = new IntersectionObserver((entries) => {
