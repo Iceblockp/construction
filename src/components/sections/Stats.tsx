@@ -38,21 +38,33 @@ const Stats = (props: Props) => {
 
                 <div className=" w-full lg:w-[50%] p-[30px] ">
                     <div className=' w-full h-full grid grid-cols-1 gap-[30px] sm:grid-cols-2 '>
-                        <div className=' p-[20px] border border-gray-400  '>
-                            <div className=' font-semibold text-[72px] text-neutral-800 '>123</div>
-                            <div className=' text-[24px] text-neutral-500 '>Projects Completed</div>
+                        <div className=' p-[20px] relative border border-gray-400  '>
+                            <div className=" absolute  top-[-20px] left-[-20px]  ">
+                                <img src="/img/project-complete.png" className='  ' alt="" />
+                            </div>
+                            <div className=' font-semibold text-[72px] text-neutral-800 leading-[60px] '>123</div>
+                            <div className=' text-[24px] text-neutral-500 border-s-[5px] px-[10px] border-[#F9995D] '>Projects Completed</div>
                         </div>
-                        <div className=' p-[20px] border border-gray-400  '>
-                            <div className=' font-semibold text-[72px] text-neutral-800 '>123</div>
-                            <div className=' text-[24px] text-neutral-500 '>Projects Completed</div>
+                        <div className=' relative p-[20px] border border-gray-400  '>
+                            <div className=" absolute  top-[-5px] right-[-20px]  ">
+                                <img src="/img/happy-client.png" className='  ' alt="" />
+                            </div>
+                            <div className=' font-semibold text-[72px] text-neutral-800 leading-[60px] '>84</div>
+                            <div className=' text-[24px] text-neutral-500 border-s-[5px] px-[10px] border-[#F9995D] '>Happy Clients</div>
                         </div>
-                        <div className=' p-[20px] border border-gray-400  '>
-                            <div className=' font-semibold text-[72px] text-neutral-800 '>123</div>
-                            <div className=' text-[24px] text-neutral-500 '>Projects Completed</div>
+                        <div className=' relative p-[20px] border border-gray-400  '>
+                            <div className=" absolute  top-[-20px] right-[-20px]  ">
+                                <img src="/img/reward.png" className='  ' alt="" />
+                            </div>
+                            <div className=' font-semibold text-[72px] text-neutral-800 leading-[60px] '>37</div>
+                            <div className=' text-[24px] text-neutral-500 border-s-[5px] px-[10px] border-[#F9995D] '>Awards Win</div>
                         </div>
-                        <div className=' p-[20px] border border-gray-400  '>
-                            <div className=' font-semibold text-[72px] text-neutral-800 '>123</div>
-                            <div className=' text-[24px] text-neutral-500 '>Projects Completed</div>
+                        <div className=' relative p-[20px] border border-gray-400  '>
+                            <div className=" absolute  bottom-[-20px] right-[-20px]  ">
+                                <img src="/img/year-business.png" className='  ' alt="" />
+                            </div>
+                            <div className=' font-semibold text-[72px] text-neutral-800 leading-[60px] '>30</div>
+                            <div className=' text-[24px] text-neutral-500 border-s-[5px] px-[10px] border-[#F9995D] '>Years in Business</div>
                         </div>
 
                     </div>

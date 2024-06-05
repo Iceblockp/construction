@@ -27,7 +27,7 @@ const Services = (props: Props) => {
                         <div className=' size-[44px] my-[20px] border-b-2 border-neutral-100 flex justify-center items-center '>
                             <ServiceThree />
                         </div>
-                        <div className=' font-semibold text-[14.63px] text-[#2947A9] '>Construction</div>
+                        <div className=' font-semibold text-[14.63px] text-[#2947A9] '>Consultation</div>
                     </div>
                     <div className=' w-full md:w-[198.3px] mx-auto bg-[#2947A9] h-[132.44px] border border-gray-400 flex flex-col items-center'>
                         <div className=' size-[44px] my-[20px] border-b-2 border-white flex justify-center items-center '>

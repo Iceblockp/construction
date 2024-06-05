@@ -12,27 +12,32 @@ type Props = {}
 
 const HeroSection = (props: Props) => {
     return (
-        <div className=' h-[646px] bg-gray-500 w-full relative '>
+        <div className=' h-[646px] w-full relative '>
 
             <Carousel className=" w-full h-full z-20 relative  overflow-hidden ">
                 <CarouselContent className=' absolute w-full h-full ml-0  top-0 left-0'>
                     <CarouselItem className=' w-full h-full pl-0 ' >
-                        <div className=' w-full h-full bg-pink-600 '></div>
+                        <div className=' w-full h-full bg-[url("/img/construction-one.png")] bg-cover bg-center '></div>
 
                     </CarouselItem>
                     <CarouselItem className=' w-full h-full pl-0 ' >
-                        <div className=' w-full h-full bg-blue-600 '></div>
+                        <div className=' w-full h-full bg-[url("/img/construction-two.png")] bg-cover bg-center '></div>
 
                     </CarouselItem>
                     <CarouselItem className=' w-full h-full pl-0 ' >
-                        <div className=' w-full h-full bg-violet-500 '></div>
+                        <div className=' w-full h-full bg-[url("/img/construction-three.png")] bg-cover bg-center '></div>
+
+
+                    </CarouselItem>
+                    <CarouselItem className=' w-full h-full pl-0 ' >
+                        <div className=' w-full h-full bg-[url("/img/construction-four.png")] bg-cover bg-center '></div>
 
 
                     </CarouselItem>
 
                 </CarouselContent>
 
-                <div className=' w-full h-full relative '>
+                <div className=' w-full h-full relative bg-[#ffffff81] '>
                     <Container>
                         <div className=' flex w-full h-full'>
                             <div className=' w-[400px] md:w-[600px] h-full flex items-center '>
