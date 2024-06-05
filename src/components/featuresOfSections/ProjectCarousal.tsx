@@ -97,14 +97,14 @@ const ProjectCarousal = (props: Props) => {
                             <div className="p-1 w-full relative h-full grid grid-cols-2 sm:grid-cols-2 gap-4">
                                 {
                                     items.map((item) => (
-                                        <div className=' w-full h-[121px] sm:h-[242px]'>
+                                        <div key={item.data} className=' w-full h-[121px] sm:h-[242px]'>
 
                                         </div>
                                     ))
                                 }
                                 {
                                     items.map((item) => (
-                                        <div style={{ backgroundImage: `url(${item.image})` }} className={` bg-cover bg-center absolute border border-black ${item.isDetail ? (` w-[85%] h-[85%] z-40 duration-500   ${(item.number == 1 && "top-[7.5%] left-[7.5%]  ") || (item.number == 2 && "top-[7.5%] right-[7.5%]") || (item.number == 3 && "left-[7.5%] bottom-[7.5%]") || (item.number == 4 && "right-[7.5%] bottom-[7.5%]")} `) : (` w-[47%] h-[47%]  ${(item.number == 1 && "top-0 left-0 ") || (item.number == 2 && "top-0 right-0") || (item.number == 3 && "left-0 bottom-0") || (item.number == 4 && "right-0 bottom-0")} `)} `}>
+                                        <div key={item.data} style={{ backgroundImage: `url(${item.image})` }} className={` bg-cover bg-center absolute border border-black ${item.isDetail ? (` w-[85%] h-[85%] z-40 duration-500   ${(item.number == 1 && "top-[7.5%] left-[7.5%]  ") || (item.number == 2 && "top-[7.5%] right-[7.5%]") || (item.number == 3 && "left-[7.5%] bottom-[7.5%]") || (item.number == 4 && "right-[7.5%] bottom-[7.5%]")} `) : (` w-[47%] h-[47%]  ${(item.number == 1 && "top-0 left-0 ") || (item.number == 2 && "top-0 right-0") || (item.number == 3 && "left-0 bottom-0") || (item.number == 4 && "right-0 bottom-0")} `)} `}>
                                             <div onClick={() => viewDetail(item.data)} className={` w-full h-full  `}></div>
                                             {item.isDetail && (
                                                 <div onClick={() => closeDetail(item.data)} className=' absolute top-0 right-0 bg-red-300 cursor-pointer '>close</div>

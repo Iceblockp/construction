@@ -59,7 +59,7 @@ const Navbar = (props: Props) => {
                                 <DropdownMenuContent className=' rounded-none w-[200px] border border-blue-200 px-4 space-y-2 py-2 '>
                                     {sections.map((section) => (
 
-                                        <DropdownMenuItem key={section.id}><button className={` capitalize text-[18px]  font-logo font-semibold border-gray-600 ${section.id == activeSection ? 'text-[#2947A9]' : "text-neutral-600"} `} onClick={() => scrollToSection(section.ref)}>{section.id}</button></DropdownMenuItem>
+                                        <DropdownMenuItem onClick={() => scrollToSection(section.ref)} key={section.id}><button className={` capitalize text-[18px]  font-logo font-semibold border-gray-600 ${section.id == activeSection ? 'text-[#2947A9]' : "text-neutral-600"} `} >{section.id}</button></DropdownMenuItem>
                                     ))}
 
                                 </DropdownMenuContent>
