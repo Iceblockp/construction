@@ -45,23 +45,21 @@ const Navbar = (props: Props) => {
                         <div className=' hidden lg:flex text-[18px]  gap-[50px] items-center justify-between '>
                             {sections.map((section) => (
                                 <div key={section.id} >
-                                    <button className={` capitalize text-[18px] text-neutral-900 font-logo border-gray-800 ${section.id == 'contact' ? 'text-[#F9995D] font-semibold' : ""} ${section.id == activeSection ? "border-b" : ""}`} onClick={() => scrollToSection(section.ref)}>{section.id}</button>
+                                    <button className={` capitalize text-[18px]  font-logo border-gray-800 ${section.id == activeSection ? "text-[#2947A9] font-semibold" : "text-neutral-900"}`} onClick={() => scrollToSection(section.ref)}>{section.id}</button>
                                 </div>
                             ))}
                         </div>
                         <div className=' flex items-center lg:hidden '>
 
 
-                            <DropdownMenu>
+                            <DropdownMenu >
                                 <DropdownMenuTrigger><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-8">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                                 </svg></DropdownMenuTrigger>
-                                <DropdownMenuContent>
-                                    <DropdownMenuLabel>Menu</DropdownMenuLabel>
-                                    <DropdownMenuSeparator />
+                                <DropdownMenuContent className=' rounded-none w-[200px] border border-blue-200 px-4 space-y-2 py-2 '>
                                     {sections.map((section) => (
 
-                                        <DropdownMenuItem key={section.id}><button className={` capitalize text-[18px] text-neutral-900 font-logo border-gray-600 ${section.id == activeSection ? 'border-b' : ""} `} onClick={() => scrollToSection(section.ref)}>{section.id}</button></DropdownMenuItem>
+                                        <DropdownMenuItem key={section.id}><button className={` capitalize text-[18px]  font-logo font-semibold border-gray-600 ${section.id == activeSection ? 'text-[#2947A9]' : "text-neutral-600"} `} onClick={() => scrollToSection(section.ref)}>{section.id}</button></DropdownMenuItem>
                                     ))}
 
                                 </DropdownMenuContent>
