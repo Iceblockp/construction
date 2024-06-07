@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { RefObject } from 'react'
 import Container from '../layout/Container'
 
-type Props = {}
+type Props = {
+    scrollToSection: (sectionRef: React.RefObject<HTMLDivElement>) => void,
+    contactRef: RefObject<HTMLDivElement>;
+
+}
 
 const Stats = (props: Props) => {
+    const { scrollToSection, contactRef } = props;
     return (
         <Container>
             <div className='flex  lg:flex-row lg:items-center py-[50px] flex-col-reverse w-full  '>
@@ -75,7 +80,7 @@ const Stats = (props: Props) => {
                         <div className=' font-bold text-[43.9px] font-logo text-[#2947A9] '>30 Years Experience</div>
                         <div className=' font-normal font-logo text-[14.63px] text-neutral-600 '>Our company has been the leading provided construction services to clients throughout the USA since 1988.</div>
                         <div>
-                            <button className=' bg-[#2947A9] rounded-l text-[13.17px] px-[14.63px] py-[11.71px] text-white font-semibold font-logo '>Contact Us</button>
+                            <button onClick={() => scrollToSection(contactRef)} className=' bg-[#2947A9] rounded-l text-[13.17px] px-[14.63px] py-[11.71px] text-white font-semibold font-logo '>Contact Us</button>
                         </div>
 
                     </div>

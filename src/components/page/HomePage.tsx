@@ -96,7 +96,7 @@ const HomePage = (props: Props) => {
                 <Services />
             </div>
             <div>
-                <Stats />
+                <Stats contactRef={contactRef} scrollToSection={scrollToSection} />
             </div>
             <div>
                 <Ads />
